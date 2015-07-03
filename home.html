@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="style.css?reload" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>Double Star Farm</title>
+
+  <script type="text/javascript"> 
+  var totalCount = 3;
+  function ChangeIt() 
+  {
+  var num = Math.ceil( Math.random() * totalCount );
+  document.body.background = 'bgimages/'+num+'.jpg';
+  document.body.style.backgroundRepeat = "repeat";// Background repeat
+  }
+  </script>
+
+
+</head>
+
+<body class="grey-bg">
+  <div id="content" class="blue-border white-bg">
+    <div class="title">Double Star Farm
+      <div class="blurb">
+        Fairlee, VT<br>
+      </div>
+      <a href=""><img src="Farm.jpg"/></a>
+    </div>
+
+    <div class="button">About
+      <span class="lnr lnr-chevron-down arrow"></span>
+    </div>
+    <div class="dropdown">We are a small, family run cheese farm in Fairlee Vermont. <br><br>
+    
+    </div>
+
+    <div class="button">Press
+      <span class="lnr lnr-chevron-down arrow"></span>
+    </div>
+    <div class="dropdown">
+      Download the press kit here! 
+    </div>
+
+    <div class="button">Cheeses
+      <span class="lnr lnr-chevron-down arrow"></span>
+    </div>
+    <div class="dropdown">Rockfort, Comte, cheddar, and more</div>
+    
+    <div class="button">Photo Gallery
+      <span class="lnr lnr-chevron-down arrow"></span>
+    </div>
+    <div class="dropdown">Coming soon!</div>
+
+    <div class="button">Contact
+      <span class="lnr lnr-chevron-down arrow"></span>
+    </div>
+    <div class="dropdown">
+    <form class="form-horizontal" action="mail.php" method="POST">  
+
+      <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" name="name" id="inputEmail3" placeholder="Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" id="inputEmail3" name="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Subject</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" id="inputEmail3" name="website" placeholder="Subject">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" name="message" id="inputPassword3" rows="6" cols="25" placeholder="Message"></textarea>
+    </div>
+  </div>
+
+  <br>
+    <div class ="form-group center">
+    <input style ="width:30%" class="form-control btn btn-info" type="submit" value="Send">
+<br>
+  </div>
+
+
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript"> 
+ChangeIt();
+</script> 
+
+
+</html>
